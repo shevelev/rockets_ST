@@ -59,7 +59,6 @@ extension PageViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
-        print("sdf \(currentPage)")
         pageControl.currentPage = currentPage
     }
 }
