@@ -22,17 +22,13 @@ class NetworkManager {
                 do {
                     let rockets = try! JSONDecoder().decode([Rocket].self, from: data)
                     networkDelegate?.updateRocketsUI(rockets)
-                    print("loading.........")
-                    print(rockets.count)
                 }
                 
             case .failure(let error):
                 print("error \(error.localizedDescription)")
             }
         }
-        
     }
-    
     
     static func requestData(urlString: String, completion: @escaping(Result<Data, Error>) -> Void) {
         guard let url = URL(string: urlString) else {return}
@@ -50,7 +46,6 @@ class NetworkManager {
             }
         }.resume()
     }
-    
 }
 
 protocol NetworkDelegate {
