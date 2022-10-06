@@ -67,13 +67,12 @@
 				C93E5AF928EB618800FC7A0D /* Extension */,
 				C93E5ADD28E8776B00FC7A0D /* AppDelegate.swift */,
 				C93E5ADF28E8776B00FC7A0D /* SceneDelegate.swift */,
-				C93E5AE328E8776B00FC7A0D /* Main.storyboard */,
+				C9C0616D28EF547100DEE679 /* Views */,
 				C93E5AE628E8776C00FC7A0D /* Assets.xcassets */,
-				C93E5AE828E8776C00FC7A0D /* LaunchScreen.storyboard */,
 				C93E5AEB28E8776C00FC7A0D /* Info.plist */,
 				C93E5AF328E87A1100FC7A0D /* Model */,
 				C93E5AF428E87D6D00FC7A0D /* NetworkManager.swift */,
-				C93E5AF828EB5AC200FC7A0D /* View */,
+				C93E5AF828EB5AC200FC7A0D /* Controllers */,
 			);
 			path = kst;
 			sourceTree = "<group>";
@@ -86,13 +85,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C93E5AF828EB5AC200FC7A0D /* View */ = {
+		C93E5AF828EB5AC200FC7A0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				C9C0616B28EEC71E00DEE679 /* DetailRocketPageVC.swift */,
 				C93E5AF628EB5ABB00FC7A0D /* PageViewController.swift */,
 			);
-			path = View;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C93E5AF928EB618800FC7A0D /* Extension */ = {
@@ -100,6 +99,15 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C9C0616D28EF547100DEE679 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C93E5AE828E8776C00FC7A0D /* LaunchScreen.storyboard */,
+				C93E5AE328E8776B00FC7A0D /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

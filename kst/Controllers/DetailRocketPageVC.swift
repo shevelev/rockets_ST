@@ -6,19 +6,26 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailRocketPageVC: UIViewController {
     
-    @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var rocketName: UILabel!
+    @IBOutlet weak var settingsIcon: UILabel!
     
     var rocket: Rocket?
     var index: Int = 0
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lbl.text = rocket?.name
+        image.kf.setImage(with: URL(string: (rocket?.flickr_images.randomElement())!))
         
-        // Do any additional setup after loading the view.
+        rocketName.text = rocket?.name
+        
+        
     }
 }
